@@ -25,4 +25,5 @@ int n, m;
 	{
 		printf("Last digit of %d is %d and is 0\n", n, m);
 	}
-	return (0);}
+	return (0);
+}
