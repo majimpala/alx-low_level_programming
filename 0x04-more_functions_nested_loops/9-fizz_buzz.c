@@ -2,12 +2,13 @@
 
 /**
  * main - prints buzz for 3 and 5
+ *
  * Return : Always 0
  */
 
 int main(void)
 {
-int i;
+int i =1 ;
 
 for (i = 1; i <= 100; i++)
 {
