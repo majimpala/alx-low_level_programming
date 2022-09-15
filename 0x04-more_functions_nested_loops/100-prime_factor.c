@@ -1,33 +1,26 @@
 #include "main.h"
 
 /**
- * print_triangle - check for a digit
- * @size : integer type
- * Return:void
+ * * main - prime numbers
+ *
+ * Return: 0
  */
 
-void print_triangle(int size)
+int main(void)
 {
-	int i = 1, ii;
+	long num = 612852475143;
+	long divisor = 2;
+	long larg_prim = 0;
 
-	while (i <= size && size > 0)
+	while (num != 1)
 	{
-		ii = 0;
-		while (ii < size - i)
+		if (num % divisor == 0)
 		{
-			_putchar(' ');
-			ii++;
+			num = num / divisor;
+			larg_prim = divisor;
 		}
-		ii = 0;
-		while (ii < i)
-		{
-			_putchar('#');
-			ii++;
-		}
-
-		_putchar('\n');
-		i++;
+		divisor += 1;
 	}
-	if (i == 1)
-		_putchar('\n');
+	printf("%ld\n", larg_prim);
+	return (0);
 }
